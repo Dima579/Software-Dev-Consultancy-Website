@@ -6,8 +6,49 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
+.condenser
+{
+    margin: 0px 200px 0px 200px;
+}
 /*GENERAL SELECTORS*/
 
 /*HEADER/NAVBAR*/
+header
+{
+    background-color: #d1b000;
+    padding: 10px;
+}
 
+.head-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.navlist
+{
+    display: flex;
+}
+
+.navlist a
+{
+    text-decoration: none;
+}
+
+.navlist li
+{
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+    margin: 0px 10px 0px 10px;
+}
+
+.navlist li[CONTACT]
+{
+    margin: 0px 0px 0px 10px;
+}
 /*HEADER/NAVBAR*/

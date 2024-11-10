@@ -26,7 +26,7 @@ h2
 {
     font-size: 50px;
     color: #333;
-    text-decoration: underline;
+    
     text-align: center;
 }
 
@@ -85,6 +85,11 @@ header h2
     font-size: 30px;
     color: #333;
     font-family: "Source Code Pro", monospace;
+}
+
+.logotxt
+{
+    font-weight: 900;
 }
 
 .head-content
@@ -259,6 +264,22 @@ video
     text-decoration: underline;
 }
 /*SERVICES*/
+
+/*CLIENTS*/
+.logoc
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgbox img
+{
+    width: auto;
+    height: 100px;
+    margin: 100px 15px;
+}
+/*CLIENTS*/
 
 /*FOOTER*/
 footer

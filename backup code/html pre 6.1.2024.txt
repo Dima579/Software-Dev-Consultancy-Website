@@ -24,9 +24,9 @@
         <!--NAVBAR-->
         <header>
             <div class="condenser-header head-content">
-                <h2 class="logotxt">&lt;S0FT_SOLUTIONS&gt;</h2>
+                <h2 class="logotxt">&lt;SOFT_SOLUTIONS&gt;</h2>
                 <nav>
-                    <ul class="navlist">
+                    <ul class="navlist" id="navlist">
                         <a href="#"><li>HOME</li></a>
                         <a href="#"><li>SERVICES</li></a>
                         <a href="#"><li>CONTACT</li></a>
@@ -34,43 +34,42 @@
                 </nav> 
             </div>
         </header>
+        <!--NAVBAR-->
         <main>
-            <!--HERO-->
-            <section class="hero">
-                <video muted autoplay loop>
-                    <source src="videos/corporatevid1.mp4" type="video/mp4">
-                </video>
-                <div class="vid-text-container">
+            <div class="gap">
+                <!--HERO-->
+                <section class="hero">
+                    <video muted autoplay loop>
+                        <source src="videos/corporatevid1.mp4" type="video/mp4">
+                    </video>
                     <div class="vid-text">
                         <h1>
                             DESIGN,
                             <br>DEVELOPMENT
                             <br>AND 
-                            <br>DEPLOYMENT, 
-                            <br>BEYOND 
+                            <br>DEPLOYMENT BEYOND 
                             <br>ALL 
                             <br>LIMITS.
                         </h1>
                         <div class="vid-text-minor">
                             <h2>
-                                WE OFFER 
-                                <br>MULTIPLE SERVICES
-                                <br>ALL GEARED 
-                                <br>TOWARDS PROVIDING 
+                                WE OFFER MULTIPLE 
+                                <br>SERVICES ALL GEARED 
+                                TOWARDS PROVIDING 
                                 <br>THE BEST 
-                                <br>SOLUTIONS 
+                                SOLUTIONS 
                                 <br>TO OUR CLIENTS
                             </h2>
                             <button class="button-vid">LET'S GET STARTED</button>
                         </div>
-        
                     </div>
-                </div>
-            </section>
-            <!--HERO-->
-            <!--WHO WE ARE-->
-            <div class="condenser">
-            <h2>WHO WE ARE</h2>
+                </section>
+                <!--HERO-->
+                <div class="condenser">
+                    <!--WHO WE ARE-->
+                    <section class="who">
+                        <hr>
+                        <h2>WHO WE ARE</h2>
                         <div class="whodesc">
                             <img src="images/corporateteam1.jpg" alt="the team">
                             <div class="hdp">

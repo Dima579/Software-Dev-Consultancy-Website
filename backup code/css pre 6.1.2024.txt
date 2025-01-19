@@ -1,12 +1,4 @@
 /*GENERAL SELECTORS*/
-header {
-    background-color: #d1b000;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
 *
 {
     margin: 0;
@@ -14,7 +6,6 @@ header {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
 
 .condenser
 {
@@ -71,7 +62,6 @@ button
     padding: 5px;
     box-shadow: 1px 1px 1px 1px black;
     border: none;
-    border-radius: 10px;
 }
 /*BUTTONS*/
 
@@ -92,14 +82,14 @@ header
 
 header h2
 {
-    font-size: 2.5em;
-    color: #f7f9f9;
+    font-size: 30px;
+    color: #333;
     font-family: "Source Code Pro", monospace;
 }
 
 .logotxt
 {
-    font-weight: normal;
+    font-weight: 900;
 }
 
 .head-content
@@ -126,106 +116,96 @@ header h2
 {
     list-style: none;
     text-decoration: none;
-    color: #f7f9f9;
+    color: #333;
     margin: 0px 40px 0px 40px;
-
+    font-weight: bold;
     font-size: 20px;
 }
 
 .navlist a 
 {
     position: relative;
-    color: #f7f9f9;
+    color: #333;
     text-decoration: none;
-    font-weight: normal;
   }
   
-  .navlist a::after 
-{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.2em;
-	background-color: #f7f9f9;
-	opacity: 0;
-	transition: opacity 300ms, transform 300ms;
-}
- 
-.navlist a:hover::after
-{
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
-}
+  .navlist a:hover 
+  {
+    color: #333;
+  }
+  
+  .navlist a::before 
+  {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navlist a:hover::before 
+  {
+    transform: scaleX(1);
+  }
 /*HEADER/NAVBAR*/
 
 /*HERO SECTION*/
-.hero
+video
 {
-    display: flex;
-    margin-bottom: 50px;
-}
-
-video {
     width: 100%;
     height: auto;
-    position: absolute;
-    /*z-index: 1;*/
+    position: relative;
 }
 
-.vid-text-container
+.vid-text
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
-    z-index: 1;
+    position: absolute;
+    bottom: 0%;
+    top: 10%;
 }
-
-
 
 .vid-text h1
 {
     color: #f7f9f9;
-    font-size: 125px;
+    font-size: 100px;
+    margin: 0px 40px 0px 100px;
+}
+
+.vid-text h2
+{
+    color: #f7f9f9;
+    margin: 0px 100px 0px 40px;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    /*position: relative;
+    top: 3%;
+    */
 }
 
 .vid-text-minor
 {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    z-index: 1;
-    flex-direction: column;
-
-    position: absolute;
-    right: 0.5%;
-    top: 20%;
 }
 
-.vid-text-minor h2
+.button-vid
 {
-    color: #f7f9f9;
-    font-size: 90px;
-}
-
-.button-vid {
-    display: flex;
-    font-size: 40px;
-    padding: 25px;
-    /*
+    font-size: 30px;
+    padding: 20px;
     position: relative;
-    z-index: 3;
-    */
-     transition: 0.3s;
-     margin-top: 30px;
-}
-
-.button-vid:hover {
-    background-color: #003b5c;
-    cursor: pointer;
+    right: 4%;
 }
 /*HERO SECTION*/
 

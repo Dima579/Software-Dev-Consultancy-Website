@@ -1185,6 +1185,17 @@ footer
   gap: 10px;
 }
 
+  /*RESPONSIVENESS*/
+  @media (max-width: 768px)
+  {
+    .intro-title
+    {
+      padding: 100px 0px;
+    }
+  }
+  /*RESPONSIVENESS*/
+
+
 .intro-title h2
 {text-decoration: underline;}
 
@@ -1376,6 +1387,11 @@ footer
   text-decoration: underline;
 }
 
+.fulln-cont h2
+{
+  margin-bottom: 30px;
+}
+
 .f-firstn-cont
 {
   display: flex;
@@ -1398,6 +1414,7 @@ footer
 
 .f-buttons-cont
 {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;

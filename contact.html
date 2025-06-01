@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soft-Solutions</title>
+    <!--FAVICON-->
+    <link rel="icon" type="images/png" href="images/favicon/favicon.png">
+    <!--FAVICON-->
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--ICONS-->
+    <!--FONT-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!--NAVBAR-->
+        <header>
+            <div class="condenser-header head-content">
+                <h2 class="logotxt">&lt;S0FT_SOLUTIONS&gt;</h2>
+                <nav>
+                    <button class="hm-button b-mains" onclick="toggleMenu()"><i class="fa fa-bars menu-toggle"></i></button>
+                    <ul class="navlist" id="navlist">
+                        <li><a href="Index.html"><button class="b-mains">HOME</button></a></li>
+                        <li><a href="services.html"><button class="b-mains">SERVICES</button></a></li>
+                        <li><a href="contact.html"><button class="b-mains">CONTACT</button></a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </header>
+        <!--NAVBAR-->
+        
+        <main class="condenser">
+            <section class="main-fcontainer">
+                <section class="intro-title">
+                        <h2>LET'S HAVE A CONVERSATION</h2>
+                        <p>Although information isn't stored upon submission, please do not put any real information in the fields</p>
+                        <i class="fa fa-envelope"></i>
+                </section>
+
+                <!--FORM-->
+                <section class="form-container">
+                <form action="confirm.html">
+                    <div class="fulln-cont">
+                        <div class="f-firstn-cont">
+                            <select>
+                                <option disabled selected>Title</option>
+                                <option>Mr</option>
+                                <option>Miss</option>
+                                <option>Mrs</option>
+                                <option>Dr</option>
+                                <option>Mx</option>
+                            </select>
+
+                            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                        </div>
+
+                        <input type="text" id="sname" name="sname" placeholder="Second Name" required>
+                    </div>
+
+                    <div class="f-comp-cont">
+                        <input type="text" id="cname" name="cname" placeholder="Company (Optional)">
+                    </div>
+
+                    <div class="f-contactd-cont">
+                        <input type="email" placeholder="Email Address (e.g. example@mail.com)">
+                        <input type="tel" id="phone" name="phone" placeholder="04361-222-892" pattern="[0-9]{5}-[0-9]{3}-[0-9]{3}">
+                    </div>
+
+                    <div class="f-contm-cont">
+                        <select required name="enquiry-type" id="reason">
+                                <option disabled selected>Enquiry Type</option>
+                                <option value="tecCon">Technical Consultation</option>
+                                <option value="webDes">Web Design</option>
+                                <option value="webDev">Web Development</option>
+                                <option>Other</option>
+                            </select>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <textarea id="message" rows="10" cols="100" placeholder="Please type your message here" required></textarea>
+                    </div>
+
+                    <div class="f-buttons-cont">
+                        <button class="b-mains button-vid" type="reset">Reset From</button>
+                        <button class="b-mains button-vid" type="submit">Submit From</button>
+                    </div>
+                </form>
+            </section>
+
+            <!--FORM-->
+        </main>
+
+         <!--FOOTER-->
+        <footer>
+            <div class="f-content-container condenser-header">
+                <div class="cright-logo">
+                    <h2 class="logotxt">&lt;S0FT_SOLUTIONS&gt;</h2>
+                    <h3>@2025 All rights Reserved</h3>
+                </div>
+            <div class="footerrside">
+                <div class="fs-navlist">
+                    <nav>
+                        <ul class="navlistf" id="navlistf">
+                            <li class="f-title">LINKS:</li>
+                            <li><a href="Index.html">HOME</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="faddress">
+                    <ul>
+                        <li>ADDRESS:</li>
+                        <li class="fs-content">32 N Road</li>
+                        <li class="fs-content">Barley</li>
+                        <li class="fs-content">TGX Z3Z</li>
+                    </ul>
+                </div>
+                <div class="contactn">
+                    <ul>
+                        <li>CONTACT:</li>
+                        <li class="fs-content">+00 00000-000000</li>
+                        <li class="fs-content">notreal@youmail.com</li>
+                        <li class="fs-content">+1-100-1010101</li>
+                    </ul>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11258.692878738546!2d-2.0740704806116153!3d51.06068519930233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873c8a124c0d65d%3A0xe84f63e3c43a414b!2sTisbury!5e0!3m2!1sen!2suk!4v1748552679156!5m2!1sen!2suk"></iframe>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!--FOOTER-->
+    </div>
+    <script src="hamburger-menu and transitions.js"></script>
+    <script src="contactServ.js"></script>
+</body>
+</html>

@@ -1,0 +1,493 @@
+/*GENERAL SELECTORS*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.condenser
+{
+    margin: 0px 200px 0px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+    /*RESPONSIVENESS*/
+    @media (max-width: 768px)
+    {
+        .condenser
+        {
+            margin: auto;
+        }
+    }
+    /*RESPONSIVENESS*/
+
+
+h2
+{
+    font-size: 50px;
+    color: #f7f9f9;
+    text-align: center;
+}
+
+p
+{
+    font-size: 25px;
+    color: #f7f9f9;
+    text-align: center;
+}
+
+body
+{background-color: #1a1a1a;}
+
+/*GENERAL SELECTORS*/
+
+/*HEADER/NAVBAR*/
+
+.condenser-header
+{margin: 0px clamp(1rem, 10vw, 12.5rem);}
+
+    /*RESPONSIVENESS*/
+    @media (max-width: 768px)
+    {
+        .condenser-header
+        {
+           margin: auto;
+        }
+    }
+    /*RESPONSIVENESS*/
+
+
+header
+{
+    background-color: #d1b000;
+    padding: 10px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+}
+
+header h2
+{
+    font-size: 2.5em;
+    color: #f7f9f9;
+    font-family: "Source Code Pro", monospace;
+}
+
+.logotxt
+{font-weight: normal;}
+
+.head-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+    /*RESPONSIVENESS*/
+    @media (max-width: 768px) 
+    {
+        .head-content
+        {
+            justify-content: center;
+        }
+
+        .head-content h2
+        {
+            font-size: 2rem;
+        }
+
+        .head-content button
+        {
+            scale: 0.75;
+        }
+    }
+    /*RESPONSIVENESS*/
+
+.navlist
+{display: flex;}
+
+.navlist a
+{text-decoration: none;}
+
+.navlist li
+{
+    list-style: none;
+    text-decoration: none;
+    color: #f7f9f9;
+    margin: 0px 10px 0px 10px;
+    scale: 1.1;
+    font-size: 20px;
+}
+
+.navlist a 
+{
+    position: relative;
+    color: #f7f9f9;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+    /*RESPONSIVENESS*/
+    @media (max-width: 768px) 
+    {
+        .navlist 
+        {
+            flex-direction: column;
+            background-color: #333;
+            position: fixed;
+            
+            left: -1000px; 
+            width: 100%;
+            height: 100vh;
+            padding-top: 60px;
+            transition: left 0.3s ease;
+            z-index: 10;
+        }
+
+        .navlist.active 
+        {left: 0;}
+
+        .navlist li 
+        {
+            margin: 50px 0;
+            text-align: center;
+            scale: 3;
+        }
+    }
+    /*RESPONSIVENESS*/
+
+
+/*NAVLIST ICONS + BUTTONS*/
+.fa-bars
+{
+    color: #f7f9f9;
+    font-size: 30px;
+}
+
+.hm-button
+{display: none;}
+
+    /*RESPONSIVENESS*/
+        @media (max-width: 768px) 
+        {
+                .hm-button
+            {
+                display: flex;
+                cursor: pointer;
+            }
+        }
+        /*RESPONSIVENESS*/
+/*NAVLIST ICONS + BUTTONS*/    
+/*HEADER/NAVBAR*/
+
+/*BUTTONS*/
+button 
+{
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    background-color: #1a1a1a;
+    color: #f7f9f9;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    transform: scale(1.2);
+    font-family: "Source Code Pro", monospace;
+    margin: 10px;
+    padding: 3px 6px;
+}
+
+button:hover 
+{transform: translateY(1px) scale(1.2);}
+
+button:active 
+{
+    transform: translateY(2px) scale(1.2);
+    border-bottom: 1px solid black;
+    background-color: #d1b000;
+}
+/*BUTTONS*/
+
+/*HERO SECTION*/
+.halt-p1
+{display: none;}
+
+.hero 
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: clamp(400px, 70vh, 1000px);
+}
+
+.hero video 
+{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.vid-text-container
+{
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    top: 10%;
+}
+
+.halt-h1
+{display: none;}
+
+.vid-text h1
+{
+    color: #f7f9f9;
+    font-size: clamp(2.5rem, 6vw, 7.8rem);
+}
+
+.vid-text-minor
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 12%;
+    gap: 30px;
+}
+
+.vid-text-minor h2
+{
+    color: #f7f9f9;
+    font-size: clamp(1.5rem, 4.5vw, 5.6rem);
+}
+
+.button-vid 
+{
+    font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
+    background-color: #1a1a1a;
+    color: #f7f9f9;
+    border: 2px solid black;
+    border-bottom: 6px solid black;
+    font-family: "Source Code Pro", monospace;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    width: auto;
+    max-width: 100%;
+}
+
+.button-vid:hover
+{border-bottom: 4px solid black;}
+
+.button-vid:active
+{border-bottom: 2px solid black;}
+
+    /*RESPONSIVENESS*/
+    @media (max-width: 768px) 
+    {
+        .hero
+        {
+            overflow: hidden;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        .hero video
+        {display: none;}
+
+        .halt-p1
+        {display: flex;}
+
+        .vid-text-container
+        {
+            flex-direction: column;
+            gap: 70px;
+            position: absolute;
+            top: 15%;
+        }
+
+        .hero-h1
+        {display: none;}
+
+        .halt-h1
+        {
+            display: block;
+            text-align: center;
+        }
+
+        .vid-text-minor
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            left: 0;
+            gap: 30px;
+        }
+
+        .vid-text-minor h2
+        {
+            color: #f7f9f9;
+            font-size: clamp(2.5rem, 6vw, 7.8rem);
+        }
+
+        .button-vid
+        {
+            scale: 1.5;
+            border: 1px solid black;
+            border-bottom: 3px solid black;
+        }
+    }
+    /*RESPONSIVENESS*/
+/*HERO SECTION*/
+
+/*FOOTER*/
+footer
+{
+    background-color: #333;
+    height: auto;
+    overflow: hidden;
+    padding: 100px 0px;
+}
+
+.f-content-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+    /*RESPONSIVENESS*/
+    @media (max-width: 768px) 
+    {
+        .f-content-container
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+    }
+    /*RESPONSIVENESS*/
+
+.cright-logo
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.cright-logo h2
+{
+    font-size: 2.5rem;
+    color: #f7f9f9;
+    font-family: "Source Code Pro", monospace;
+    text-align: left;
+}
+
+    /*RESPONSIVENESS*/
+    @media (max-width: 768px) 
+    {
+        .cright-logo h2
+        {font-size: 2rem;}
+    }
+    /*RESPONSIVENESS*/
+
+.cright-logo h3
+{
+    font-size: 15px;
+    color: #f7f9f9;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+}
+
+.footerrside
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footerrside li
+{
+    margin: 10px;
+    font-size: 15px;
+    color: #f7f9f9;
+    list-style: none;
+}
+
+    /*RESPONSIVENESS*/
+    @media (max-width: 768px) 
+    {
+        .footerrside
+        {
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .footerrside li
+        {font-size: 20px;}
+    }
+    /*RESPONSIVENESS*/
+
+.fs-navlist
+{display: flex;}
+
+.navlistf a
+{
+    color: #f7f9f9;
+    list-style: none;
+    opacity: 0.75;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.navlistf a:hover
+{opacity: 1;}
+
+.navlistf a:active
+{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.fs-content
+{
+    opacity: 0.75;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fs-content:hover
+{opacity: 1;}
+
+.faddress
+{display: flex;}
+
+.contactn
+{display: flex;}
+
+.map-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.map-container iframe 
+{
+    max-width: 100%;
+    height: auto;
+}
+/*FOOTER*/

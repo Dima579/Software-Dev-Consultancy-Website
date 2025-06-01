@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soft-Solutions</title>
+    <!--FAVICON-->
+    <link rel="icon" type="images/png" href="images/favicon/favicon.png">
+    <!--FAVICON-->
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--ICONS-->
+    <!--FONT-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!--NAVBAR-->
+        <header>
+            <div class="condenser-header head-content">
+                <h2 class="logotxt">&lt;S0FT_SOLUTIONS&gt;</h2>
+                <nav>
+                    <button class="hm-button b-mains" onclick="toggleMenu()"><i class="fa fa-bars menu-toggle"></i></button>
+                    <ul class="navlist" id="navlist">
+                        <li><a href="Index.html"><button class="b-mains">HOME</button></a></li>
+                        <li><a href="services.html"><button class="b-mains">SERVICES</button></a></li>
+                        <li><a href="contact.html"><button class="b-mains">CONTACT</button></a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </header>
+        <!--NAVBAR-->
+        <main>
+            <section class="intro-title">
+                <h2>OUR SERVICES</h2>
+                <p>Here are the services that we can provide to you</p>
+                <i class="	fa fa-pencil-square-o"></i>
+            </section>
+
+            <!--SERVICES-->
+             <section class="services-container condenser">
+
+                <div class="s-container">
+                    <h2>TECHNICAL CONSULTATION</h2>
+                    <button class="b-mains button-vid" onclick="collapseSec(this)" data-target="0"><i id="bOpener" class="fa fa-angle-up collapse-icon"></i></button>
+                    <div class="collapse s-cont-gc hidden scMainC" id="expand-Tc">
+                    <i class="fa fa-lightbulb-o mob-icon"></i>
+                        <div class="s-cont-content-oc">
+                            <div class="s-cont-content">
+                                <p>Need guidance on the direction of your project? Our consultants can help optimise the elements of you project before the design phase:</p>
+                                <hr>
+                                <P>This service is appropriate for the following contexts:</P>
+                                <ul>
+                                    <li>You have an idea for a project but you don't know to to develop or execute the development for the project.</li>
+                                    <li>You are in the early stages of designing your project and you may need guidance or a professional opinion on what you have so far.</li>
+                                    <li>You are currently gathering the requirements for your project and you need guidance on which resources and tools will be best for you project.</li>
+                                </ul>
+                                <hr>
+                            </div>
+                            <i class="fa fa-lightbulb-o"></i>
+                        </div>
+                            <div class="s-cont-cs">
+                                <p>Does this sound like you? Click the button below to start the contact form and a consultant will contact you in due course</p>
+                                <a href="contact.html?enquire=tecCon"><button class="button-vid b-mains">ENQUIRE NOW</button></a>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="s-container">
+                    <h2>WEB DESIGN</h2>
+                    <button class="b-mains button-vid" onclick="collapseSec(this)" data-target="1"><i id="bOpener" class="fa fa-angle-up collapse-icon"></i></button>
+                    <div class="collapse s-cont-gc hidden scMainC" id="expand-Wdes">
+                    <i class="fa fa-edit mob-icon"></i>
+                        <div class="s-cont-content-oc">
+                            <div class="s-cont-content">
+                                <p>Enhance your brand and stand out, our web designers can assist you in designing visually stunning designs that account for user accessibility:</p>
+                                <hr>
+                                <P>This service is appropriate for the following contexts:</P>
+                                <ul>
+                                    <li>You currently own a business and need assistance with developing the online presence for the business.</li>
+                                    <li>You need assistance with designing a website that fits the aesthetic of your company.</li>
+                                    <li>You currently have an online presence/website or online resources however may need updating/modernization.</li>
+                                </ul>
+                                <hr>
+                            </div>
+                            <i class="fa fa-edit"></i>
+                        </div>
+                            <div class="s-cont-cs">
+                                <p>Does this sound like you? Click the button below to start the contact form and a consultant will contact you in due course</p>
+                                <a href="contact.html?enquire=webDes"><button class="button-vid b-mains">ENQUIRE NOW</button></a>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="s-container">
+                    <h2>WEB DEVELOPMENT</h2>
+                    <button class="b-mains button-vid" onclick="collapseSec(this)" data-target="2"><i id="bOpener" class="fa fa-angle-up collapse-icon"></i></button>
+                    <div class="collapse s-cont-gc hidden scMainC" id="expand-Wdev">
+                    <i class="fa fa-code mob-icon"></i>
+                        <div class="s-cont-content-oc">
+                            <div class="s-cont-content">
+                                <p>Bring your designs to life with our expert developers, who work closely with their clients in order to furfill any needs of the client:</p>
+                                <hr>
+                                <P>This service is appropriate for the following contexts:</P>
+                                <ul>
+                                    <li>You currently own a business however don’t have and wish to establish and build an online presence.</li>
+                                    <li>You have a design for your website however you or your company lack the resources to develop it.</li>
+                                    <li>You currently have an online presence/website however need assistance with ovehauling it for modern devices.</li>
+                                </ul>
+                                <hr>
+                            </div>
+                            <i class="fa fa-code"></i>
+                        </div>
+                            <div class="s-cont-cs">
+                                <p>Does this sound like you? Click the button below to start the contact form and a consultant will contact you in due course</p>
+                                <a href="contact.html?enquire=webDev"><button class="button-vid b-mains">ENQUIRE NOW</button></a>
+                            </div>
+                    </div>
+                </div>
+
+            </section>
+            <!--SERVICES-->
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <div class="f-content-container condenser-header">
+                <div class="cright-logo">
+                    <h2 class="logotxt">&lt;S0FT_SOLUTIONS&gt;</h2>
+                    <h3>@2025 All rights Reserved</h3>
+                </div>
+            <div class="footerrside">
+                <div class="fs-navlist">
+                    <nav>
+                        <ul class="navlistf" id="navlistf">
+                            <li class="f-title">LINKS:</li>
+                            <li><a href="Index.html">HOME</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="faddress">
+                    <ul>
+                        <li>ADDRESS:</li>
+                        <li class="fs-content">32 N Road</li>
+                        <li class="fs-content">Barley</li>
+                        <li class="fs-content">TGX Z3Z</li>
+                    </ul>
+                </div>
+                <div class="contactn">
+                    <ul>
+                        <li>CONTACT:</li>
+                        <li class="fs-content">+00 00000-000000</li>
+                        <li class="fs-content">notreal@youmail.com</li>
+                        <li class="fs-content">+1-100-1010101</li>
+                    </ul>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11258.692878738546!2d-2.0740704806116153!3d51.06068519930233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873c8a124c0d65d%3A0xe84f63e3c43a414b!2sTisbury!5e0!3m2!1sen!2suk!4v1748552679156!5m2!1sen!2suk"></iframe>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!--FOOTER-->
+    </div>
+    <script src="hamburger-menu and transitions.js"></script>
+    <script src="services-collapse.js"></script>
+</body>
+</html>

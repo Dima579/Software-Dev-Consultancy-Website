@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>soft-Solutions</title>
     <!--FAVICON-->
-    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link rel="icon" type="images/png" href="images/favicon/favicon.png">
     <!--FAVICON-->
     <!--FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,173 +15,257 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--ICONS-->
     <!--FONT-->
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
 </head>
 <body>
     <div class="main-container">
+
         <!--NAVBAR-->
         <header>
             <div class="condenser-header head-content">
                 <h2 class="logotxt">&lt;S0FT_SOLUTIONS&gt;</h2>
                 <nav>
-                    <ul class="navlist">
-                        <a href="#"><li>HOME</li></a>
-                        <a href="#"><li>SERVICES</li></a>
-                        <a href="#"><li>CONTACT</li></a>
+                    <button class="hm-button b-mains" onclick="toggleMenu()"><i class="fa fa-bars menu-toggle"></i></button>
+                    <ul class="navlist" id="navlist">
+                        <li><a href="Index.html"><button class="b-mains">HOME</button></a></li>
+                        <li><a href="services.html"><button class="b-mains">SERVICES</button></a></li>
+                        <li><a href="contact.html"><button class="b-mains">CONTACT</button></a></li>
                     </ul>
                 </nav> 
             </div>
         </header>
+        <!--NAVBAR-->
+
         <main>
-            <!--HERO-->
-            <section class="hero">
-                <video muted autoplay loop>
-                    <source src="videos/corporatevid1.mp4" type="video/mp4">
-                </video>
-                <div class="vid-text-container">
-                    <div class="vid-text">
-                        <h1>
-                            DESIGN,
-                            <br>DEVELOPMENT
-                            <br>AND 
-                            <br>DEPLOYMENT, 
-                            <br>BEYOND 
-                            <br>ALL 
-                            <br>LIMITS.
-                        </h1>
-                        <div class="vid-text-minor">
-                            <h2>
-                                WE OFFER 
-                                <br>MULTIPLE SERVICES
-                                <br>ALL GEARED 
-                                <br>TOWARDS PROVIDING 
-                                <br>THE BEST 
-                                <br>SOLUTIONS 
-                                <br>TO OUR CLIENTS
-                            </h2>
-                            <button class="button-vid">LET'S GET STARTED</button>
-                        </div>
-        
+        <!--HERO-->
+        <section class="hero">
+            <img class="halt-p1" src="images/hero/corporatevidphoto1.png">
+            <video muted autoplay loop>
+                <source src="videos/corporatevid1.mp4" type="video/mp4">
+            </video>
+            <div class="vid-text-container">
+                <div class="vid-text">
+                    <h1 class="halt-h1">DESIGN, DEVELOPMENT AND DEPLOYMENT, BEYOND ALL LIMITS.</h1>
+                    <h1 class="hero-h1">
+                        DESIGN,
+                        <br>DEVELOPMENT
+                        <br>AND 
+                        <br>DEPLOYMENT, 
+                        <br>BEYOND 
+                        <br>ALL 
+                        <br>LIMITS.
+                    </h1>
+                </div>
+                    <div class="vid-text-minor">
+                        <h2>
+                            WE OFFER 
+                            <br>MULTIPLE SERVICES
+                            <br>ALL GEARED 
+                            <br>TOWARDS PROVIDING 
+                            <br>THE BEST 
+                            <br>SOLUTIONS 
+                             <br>TO OUR CLIENTS
+                        </h2>
+                        <button class="button-vid b-mains">LET'S GET STARTED</button>
                     </div>
                 </div>
             </section>
             <!--HERO-->
-            <!--WHO WE ARE-->
-            <div class="condenser">
-            <h2>WHO WE ARE</h2>
-                        <div class="whodesc">
-                            <img src="images/corporateteam1.jpg" alt="the team">
-                            <div class="hdp">
-                                <p>
-                                    We are a Software Development company based in the United Kingdom who specialise in providing software and we based solutions, 
-                                    as well as technical consultations to a multitude of clients from a wide variety of industrys like healthcare and media to name two.
-                                </p>
-                                <br>
-                                <p>
-                                    Founded in 1998, we've grown from a small 2 man operation into a full-blown 30 persons team, we have come a long way and during this time have built our 
-                                    company into a reputable operation that is depended upon by companies and induviduals alike
-                                </p>
-                        </div class="hdp">
-                        </div>
-                        <hr>
-                    </section>
-                    <!--WHO WE ARE-->
-                    <!--OUR SERVICES-->
-                    <section class="services">
-                        <h2>OUR SERVICES</h2>
-                        <div class="card-container">
-                            <div class="card">
-                                <h3>Technical Consultation</h3>
-                                <p>Need guidance on the direction of your project? Our consultants can help optimise the elements of you project before the design phase</p>
-                                <button>Learn More</button>
-                            </div>
 
-                            <div class="card">
-                                <h3>Web Design</h3>
-                                <p>Enhance your brand and stand out, our web designers can assist you in designing visually stunning designs that account forn user accessibility</p>
-                                <button>Learn More</button>
-                            </div>
-
-                            <div class="card">
-                                <h3>Web Development</h3>
-                                <p>Bring your designs to life with our expert developers, who work closely with their clients in order to furfill any requirements or needs of the client</p>
-                                <button>Learn More</button>
-                            </div>
-                        </div>
-                        <hr>
-                    </section>
-                    <!--OUR SERVICES-->
-                    <!--OUR CLIENTS-->
-                    <section class="clients">
-                        <h2>OUR CLIENTS</h2>
-                        <p>
-                            Here are a few of our previous clients we've had the pleasure of working with over the duration of our time as a business, providing top quality solutions 
-                            and services for each
-                        </p>
-                        <div class="logoc">
-                            <div class="imgbox">
-                                <img src="images/IBM.png" alt="IBM">
-                            </div>
-
-                            <div class="imgbox">
-                                <img src="images/Lidl.png" alt="Lidl">
-                            </div>
-
-                            <div class="imgbox">
-                                <img src="images/McDonald's.png" alt="McDonalds">
-                            </div>
-
-                            <div class="imgbox">
-                                <img src="images/NHS.png" alt="NHS">
-                            </div>
-
-                            <div class="imgbox">
-                                <img src="images/pearson.png" alt="Pearson">
-                            </div>
-                        </div>
-                    </section>
-                    <!--OUR CLIENTS-->
+            <section class="condenser">
+                <!--SLIDER-->
+                <div class="section-titles hidden-st">
+                    <h2 class="logotxt">WHO WE ARE</h2>
+                    <span class="st-innerc">
+                        <p>Developers, creators and craftsman, we are an in-house team dedicated to providing the best services for individuals, 
+                            companies and small businesses possible. Coming from a wide array of backgrounds, this has given us a unique edge 
+                            to the quality of our services, enabling us to innovate no matter the project. Please see the slider below to 
+                            learn more about us:</p>
+                        <h1 class="st-c-initial">&lt;S&gt;</h1>
+                    </span>
                 </div>
+                
+                <section class="slider-container hidden-mc">
+
+                <!--Next and previous buttons-->
+                <button class="s-prev np-buttons" id="lPrev" onclick="prevSlide()">&#10094</button>
+                <button class="s-next np-buttons" id="rNext" onclick="nextSlide()">&#10095</button>
+            
+                <!--Navigation dots-->
+                <ul class="dots">
+                    <li><span class="dot dot-activated" id="dot0" onclick="slideSelect(0)"></span></li>
+                    <li><span class="dot" id="dot1" onclick="slideSelect(1)"></span></li>
+                    <li><span class="dot" id="dot2" onclick="slideSelect(2)"></span></li>
+                </ul>
+
+                <!--Images-->
+                <img class="slider-child" id="sImg0" src="images/slider/slide 1.png">
+                <img class="slider-child-hidden" id="sImg1" src="images/slider/slide 2.png">
+                <img class="slider-child-hidden" id="sImg2" src="images/slider/slide 3.png">
+            </section>
+                <!--SLIDER-->
+
+                <!--SERVICES-->
+            <div class="section-titles hidden-st">
+                <h2 class="logotxt">OUR BESPOKE SERVICES</h2>
+                <span class="st-innerc">
+                    <p>Whether it's at the start, middle or end of your project, we can help integrate your needs to ensure that your 
+                        project meets all the business requirements and specifications by our in-house team of professional developers, 
+                        designers and consultants. We work to ensure that the solutions we provide are only of the best quality, 
+                        please see below at what we can offer your business, company or corporation:</p>
+                    <i class="fa fa-gears"></i>
+                </span>
+            </div>
+            <section class="services hidden-mc">
+                <div class="card-container">
+                     <div class="card card1">
+                         <i class="fa fa-lightbulb-o"></i>
+                        <h3>Technical Consultation</h3>
+                        <p>Need guidance on the direction of your project? Our consultants can help optimise the elements of you project before the design phase</p>
+                        <a href="services.html#expand-Tc"><button class="b-mains">Learn More</button></a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card2">
+                        <i class="fa fa-edit"></i>
+                        <h3>Web Design</h3>
+                        <p>Enhance your brand and stand out, our web designers can assist you in designing visually stunning designs that account for user accessibility</p>
+                        <a href="services.html#expand-Wdes"><button class="b-mains">Learn More</button></a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card card3">
+                        <i class="fa fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Bring your designs to life with our expert developers, who work closely with their clients in order to furfill any needs of the client</p>
+                        <a href="services.html#expand-Wdev"><button class="b-mains">Learn More</button></a>
+                    </div>
+                </div>
+                </section>
+                <!--SERVICES-->
+
+                <!--REVIEWS-->
+                <div class="section-titles hidden-st">
+                    <h2 class="logotxt">A WORD FROM OUR CUSTOMERS</h2>
+                     <span class="st-innerc">
+                        <p>If you are still indecisive on whether to contact us for a consultation or more, here’s what some of 
+                            our previous customers have had to say about us and our services, please see the card below:</p>
+                        <i class="fa fa-thumbs-up"></i>
+                    </span>
+                </div>
+                <section class="rcard-container hidden-mc">
+                    <div class="rcard-out-container">
+                        <div class="rcard" id="rcardFade">
+                            <div class="rcard-hinfo">
+                                <img class="rcard-pimg" id="rCardImg" src="" alt="ProfilePic">
+                                <div class="rcard-tinfo">
+                                <hr>
+                                <h3 id="rCardName"></h3>
+                                <h4 id="rCardTitle"></h4>
+                                <hr>
+                                </div>
+                            </div>
+                        <p id="rCardReview"></p>
+                        <hr>
+                        <div id="rCardStars"></div>
+                    </div>
+                    <div class="rcard-nav-btns">
+                            <button id="rcPrev" onclick="rcPrev()">&#10094</button>
+                            <button id="rcNext" onclick="rcNext()">&#10095</button>
+                    </div>
+                </section>
+                <!--REVIEWS-->
+                <!--CAROUSEL-->
+                </section>
+                <div class="section-titles condenser hidden-st">
+                    <h2 class="logotxt">MORE OF OUR CLIENTS</h2>
+                    <span class="st-innerc">
+                        <p>Here are some of the previous brands we’ve worked with in the past, as stated previously we’ve had the privilege
+                            from the inception to work with everyone from individual projects and small businesses to even the most prolific 
+                            companies and corporations:</p>
+                    </span>
+                </div>
+                <section class="carousel-container hidden-mc">
+                    <div class="carousel-wrapper-inner">
+                        <span class="c-image-container"><img src="images/carousel/IBM.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/Lidl.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/McDonald's.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/NHS.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/pearson.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/IBM.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/Lidl.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/McDonald's.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/NHS.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/pearson.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/IBM.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/Lidl.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/McDonald's.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/NHS.png"></span>
+                        <span class="c-image-container"><img src="images/carousel/pearson.png"></span>
+                    </div>
+                </section>
+            <!--CAROUSEL-->
+            <div class="section-titles condenser hidden-st">
+                <h2 class="logotxt">LIKE WHAT YOU HAVE SEEN?</h2>
+                <span class="st-innerc">
+                    <p>If what we have shown you so far has been enough to convince you, please click on the contact form button to start an enquiry, 
+                        from there one of our consultants will contact you back and make arrangements as soon as possible. Alternatively if you wish 
+                        to see more, please click on the services button for a more detailed explanation of the services we provide: </p>
+                </span>
+                <a href="contact.html"><button class="button-vid b-mains">CONTACT FORM</button></a>
+                <a href="services.html"><button class="button-vid b-mains">SERVICES</button></a>
             </div>
         </main>
+        <!--FOOTER-->
         <footer>
-            <div class="condenser-header c-formatter">
-            <div class="cright-logo">
-                <h2>&lt;soft-Solutions&gt;</h2>
-                <h3>@All rights Reserved</h3>
-            </div>
-
+            <div class="f-content-container condenser-header">
+                <div class="cright-logo">
+                    <h2 class="logotxt">&lt;S0FT_SOLUTIONS&gt;</h2>
+                    <h3>@2025 All rights Reserved</h3>
+                </div>
             <div class="footerrside">
-                <nav>
-                    <ul class="navlistf" id="navlistf">
-                        <li>LINKS:</li>
-                        <a href="#"><li>HOME</li></a>
-                        <a href="#"><li>SERVICES</li></a>
-                        <a href="#"><li>CONTACT</li></a>
-                    </ul>
-                </nav>
-
+                <div class="fs-navlist">
+                    <nav>
+                        <ul class="navlistf" id="navlistf">
+                            <li class="f-title">LINKS:</li>
+                            <li><a href="Index.html">HOME</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="faddress">
                     <ul>
                         <li>ADDRESS:</li>
-                        <li>32 N Road</li>
-                        <li>Barley</li>
-                        <li>TGX Z3Z</li>
+                        <li class="fs-content">32 N Road</li>
+                        <li class="fs-content">Barley</li>
+                        <li class="fs-content">TGX Z3Z</li>
                     </ul>
                 </div>
-
                 <div class="contactn">
                     <ul>
                         <li>CONTACT:</li>
-                        <li>+00 00000-000000</li>
-                        <li>notreal@youmail.com</li>
-                        <li>+1-100-1010101</li>
+                        <li class="fs-content">+00 00000-000000</li>
+                        <li class="fs-content">notreal@youmail.com</li>
+                        <li class="fs-content">+1-100-1010101</li>
                     </ul>
                 </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11258.692878738546!2d-2.0740704806116153!3d51.06068519930233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873c8a124c0d65d%3A0xe84f63e3c43a414b!2sTisbury!5e0!3m2!1sen!2suk!4v1748552679156!5m2!1sen!2suk"></iframe>
+                </div>
+            </div>
             </div>
         </footer>
+        <!--FOOTER-->
     </div>
+    <script src="hamburger-menu and transitions.js"></script>
+    <script src="slider.js"></script>
+    <script src="review-cards.js"></script>
 </body>
 </html>

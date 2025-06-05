@@ -285,6 +285,11 @@ header h2
     }
     /*RESPONSIVENESS*/
 
+.logo-link
+{
+  text-decoration: none;
+}
+
 .navlist
 {display: flex;}
 
@@ -406,6 +411,7 @@ header h2
   height: auto;
   display: block;
   object-fit: cover;
+  filter: brightness(70%);
 }
 
 .vid-text-container
